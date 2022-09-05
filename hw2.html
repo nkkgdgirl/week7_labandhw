@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function colorChange(id) {
+            let text = document.getElementById(id);
+            text.style.color = "green";
+        }
+    </script>
+</head>
+
+<body>
+    <p>Name: <input type="text" id="name" onchange="colorChange('name')"> </p>
+    
+    <p>Age: <input type="text" id="age" pattern="\d" maxlength="3" size="5" onchange="colorChange('age')"></p>
+    
+    <p>Birthdate:  <input type="text" id="birthdate" onchange="colorChange('birthdate')"> </p>
+   
+</body>
+
+</html>
